@@ -2,7 +2,6 @@ import './styles.css';
 import debounce from 'lodash';
 import 'material-design-icons/iconfont/material-icons.css';
 import ImgApiService from './js/apiService';
-// import galleryTemplate from './templates/gallery-items.hbs';
 import modalHandlers from './js/modal-handlers';
 import {
   galleryRef,
@@ -18,7 +17,6 @@ const closeButtonRef = document.querySelector(
 );
 const overlayRef = document.querySelector('.lightbox-overlay');
 
-console.log(galleryRef);
 
 const imgApiServie = new ImgApiService();
 

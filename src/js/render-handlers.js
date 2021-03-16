@@ -10,7 +10,6 @@ export function renderImg(hits) {
     }, 500);
   }
   galleryRef.insertAdjacentHTML('beforeend', galleryTemplate(hits));
-  console.log();
 }
 
 export function clearImg() {
