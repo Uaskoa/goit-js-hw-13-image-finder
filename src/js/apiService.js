@@ -1,4 +1,4 @@
-import setting from '../js/settings';
+import setting from './settings';
 import imagesListTemplate from '../templates/imagesListTemplate.hbs';
 
 const { BASE_URL, API_KEY } = setting;

@@ -1,6 +1,6 @@
 import './styles.css';
 import debounce from 'lodash';
-import ImagesApi from './js/api';
+import ImagesApi from './js/apiService';
 import 'material-design-icons/iconfont/material-icons.css';
 
 const imagesSearch = new ImagesApi('.gallery');
@@ -14,13 +14,17 @@ inputRef.addEventListener(
   }, 1000),
 );
 
-const observerHandler = _.debounce(() => {
-  console.log('Сработал Обс');
-  imagesSearch.loadMore();
-}, 500);
 
-const observer = new IntersectionObserver(observerHandler);
 
-observer.observe(observerRef);
+
+
+// const observerHandler = _.debounce(() => {
+//   console.log('Сработал Обс');
+//   imagesSearch.loadMore();
+// }, 500);
+
+// const observer = new IntersectionObserver(observerHandler);
+
+// observer.observe(observerRef);
 
 // imagesSearch.search('kiev') // hardcoded search test
